@@ -1,0 +1,20 @@
+﻿@model AdvancedRepository.Models.CustomerModel
+@{
+	ViewBag.Title = "Detay";
+}
+
+<dl>
+	<dt>@Html.DisplayNameFor(x => x.customers.ContactName)</dt>
+	<dd>@Html.DisplayFor(x => x.customers.ContactName)</dd>
+	<dt>@Html.DisplayNameFor(x => x.customers.CompanyName)</dt>
+	<dd>@Html.DisplayFor(x => x.customers.CompanyName)</dd>
+	<dt>@Html.DisplayNameFor(x => x.customers.City)</dt>
+	<dd>@Html.DisplayFor(x => x.customers.City)</dd>
+
+</dl>
+<br />
+<div class="form-group">
+	<a href="/Category/Index" class="btn btn-success">Listeye Geri Don</a>
+</div>
+
+

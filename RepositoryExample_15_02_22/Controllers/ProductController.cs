@@ -86,6 +86,7 @@ namespace RepositoryExample_15_02_22.Controllers
             pm.pList = pr.GenelListe().OrderByDescending(x => x.ProductID).Skip(10).ToList();
 
             var xdeger = pm.pList.Count();
+           
             pm.pList.Take(xdeger - 10);
                
             return View(pm);
